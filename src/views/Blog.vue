@@ -50,9 +50,7 @@ export default class BlogView extends Vue {
         this.allQuotes = res.data.filter(
           (x: any) => x.author == this.blog.author
         );
-        const index = Math.floor(
-          Math.random() * (this.allQuotes.length - 0 + 1) + 0
-        );
+        const index = Math.floor(Math.random() * (this.allQuotes.length - 1));
         this.setQuote(this.allQuotes[index]);
       });
     } else {
