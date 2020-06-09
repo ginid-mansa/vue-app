@@ -54,9 +54,7 @@ export default class BlogView extends Vue {
         this.setQuote(this.allQuotes[index]);
       });
     } else {
-      const index = Math.floor(
-        Math.random() * (this.allQuotes.length - 0 + 1) + 0
-      );
+      const index = Math.floor(Math.random() * (this.allQuotes.length - 1));
       this.setQuote(this.allQuotes[index]);
     }
   }
