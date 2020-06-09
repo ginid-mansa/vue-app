@@ -1,4 +1,4 @@
-# lms-web
+# vue-BRIQ
 
 ## Project setup
 ```
